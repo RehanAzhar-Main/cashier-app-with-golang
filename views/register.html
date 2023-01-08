@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #f0ffff;
+            padding: 50px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-6xl font-bold">Register Page</h1>
+    <!-- <form method="post" action="/user/register">
+        <label>Username :</label>
+        <input type="text" placeholder="Type username here" name="username" required />
+        <br />
+
+        <label>Password :</label>
+        <input type="password" placeholder="Type password here" name="password" required />
+        <br />
+
+        <button type="submit">Submit</button>
+    </form> -->
+    <div class="flex flex-wrap">
+        <div class="flex-none w-1/2 h-14 mt-20 pl-20">
+            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <form class="space-y-6" method="post" action="/user/register">
+                    <h5 class="text-xl font-medium text-gray-900 dark:text-white">Sign in to Cashier App</h5>
+                    <div>
+                        <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username :</label>
+                        <input type="text" name="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                            placeholder="Type username here" required>
+                    </div>
+                    <div>
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password :</label>
+                        <input type="password" name="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                            placeholder="Type password here" required>
+                    </div>
+
+                    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    <div>
+                        <a href="/page/login" class="text-md font-medium text-gray-900 dark:text-white"> Go to Login Page </a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="flex-1 ">
+            <img src="/user/img/dashboard" width="600px" alt="asd">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
